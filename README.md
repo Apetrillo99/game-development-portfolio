@@ -4,27 +4,28 @@ Short gameplay demonstrations from original, systems-driven projects. These vide
 
 ## Empire Eternal
 
-**80-second gameplay and systems highlight**
+**Complete gameplay and systems walkthrough**
 
-[![Watch the Empire Eternal 80-second highlight](media/empire-eternal/empire-eternal-highlight-thumbnail.png)](media/empire-eternal/empire-eternal-80-second-highlight.mp4)
+[![Watch the Empire Eternal systems walkthrough](media/empire-eternal/empire-eternal-highlight-thumbnail.png)](media/empire-eternal/empire-eternal-80-second-highlight.mp4)
 
-[Watch the 80-second MP4](media/empire-eternal/empire-eternal-80-second-highlight.mp4)
+[Watch the 2:05 MP4](media/empire-eternal/empire-eternal-80-second-highlight.mp4)
 
 Empire Eternal is an original Swift and SpriteKit RPG engine developed as a playable vertical slice. The highlight shows:
 
 - continuous world traversal and an explorable town/interior flow;
 - data-driven quest dialogue, choices, rewards, and reputation feedback;
-- recruitable companion behavior and a shared combat encounter;
-- inventory and equipment management;
+- recruitable companion behavior, authored choices, and free-typed dialogue;
+- combat, body looting, inventory, and equipment management;
+- save/load plus data-driven skills, attributes, and perks;
 - crime, guard response, arrest, confiscation, and jail state transitions.
 
 The project is a substantial playable engineering prototype, not a claimed production release or content-complete commercial game.
 
 ## Lunar Loop
 
-Gameplay highlight coming next.
+[Watch the Lunar Loop 4K60 gameplay portfolio](https://apetrillo99.github.io/Lunar-Loop-Portfolio/)
 
-Lunar Loop is a systems-heavy Godot logistics and colony simulation project. Its video will be added here as a separate showcase rather than mixed into the Empire Eternal demonstration.
+Lunar Loop is a systems-heavy Godot logistics and colony simulation project with a separate showcase covering live carrier, air, and excavator fleets; conveyors and factory production; resources, utilities, and player building placement.
 
 ## Notes
 

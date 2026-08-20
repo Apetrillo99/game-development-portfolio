@@ -125,15 +125,37 @@
     }
 
     .next {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
       margin-top: 1.25rem;
-      border: 1px dashed #365169;
+      border: 1px solid #365169;
       border-radius: 18px;
-      padding: 1.35rem 1.5rem;
+      padding: 1.65rem 1.75rem;
       color: var(--muted);
       background: rgba(17, 24, 33, 0.66);
     }
 
     .next strong { color: var(--text); }
+
+    .next-copy { max-width: 760px; }
+
+    .next h2 { margin-bottom: 0.5rem; }
+
+    .next p { margin: 0; }
+
+    .project-link {
+      flex: none;
+      border-radius: 10px;
+      padding: 0.8rem 1rem;
+      background: var(--accent);
+      color: #07110d;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .project-link:hover { background: #a2ebd0; }
 
     footer {
       display: flex;
@@ -149,7 +171,7 @@
     @media (max-width: 680px) {
       main { padding-top: 2.7rem; }
       .proof-grid { grid-template-columns: 1fr; }
-      .project-heading, footer { align-items: flex-start; flex-direction: column; }
+      .project-heading, .next, footer { align-items: flex-start; flex-direction: column; }
     }
   </style>
 </head>
@@ -159,7 +181,7 @@
     <h1>Game development portfolio</h1>
     <p class="intro">Selected demonstrations from original engineering projects by Anthony Petrillo. The footage shows real playable builds; private source review can be arranged when appropriate.</p>
 
-    <article class="project" aria-labelledby="empire-eternal-title">
+    <article class="project" id="empire-eternal" aria-labelledby="empire-eternal-title">
       <video controls playsinline preload="metadata" poster="media/empire-eternal/empire-eternal-highlight-thumbnail.png">
         <source src="media/empire-eternal/empire-eternal-80-second-highlight.mp4" type="video/mp4">
         Your browser does not support embedded MP4 video. <a href="media/empire-eternal/empire-eternal-80-second-highlight.mp4">Download the highlight</a>.
@@ -167,20 +189,27 @@
       <div class="project-copy">
         <div class="project-heading">
           <h2 id="empire-eternal-title">Empire Eternal</h2>
-          <span class="duration">80-second highlight</span>
+          <span class="duration">2:05 systems walkthrough</span>
         </div>
-        <p class="summary">An original Swift and SpriteKit RPG engine presented as a substantial playable vertical slice. This concise edit preserves continuous movement while proving several connected runtime systems.</p>
+        <p class="summary">An original Swift and SpriteKit RPG engine presented as a substantial playable vertical slice. The walkthrough follows one continuous play session while proving connected world, quest, dialogue, combat, progression, inventory, companion, save, crime, and jail systems.</p>
         <ul class="proof-grid">
           <li>World traversal and interior transitions</li>
           <li>Data-driven dialogue, quests, and reputation</li>
-          <li>Recruitable companion and shared combat</li>
-          <li>Inventory, crime, arrest, confiscation, and jail</li>
+          <li>Recruitable companion and free-typed dialogue</li>
+          <li>Combat, body looting, inventory, and equipment</li>
+          <li>Skills, attributes, perks, and save/load</li>
+          <li>Crime response, arrest, confiscation, and jail</li>
         </ul>
       </div>
     </article>
 
-    <section class="next" aria-label="Upcoming Lunar Loop video">
-      <strong>Lunar Loop is next.</strong> Its Godot logistics and colony-simulation highlight will be added here as a separate project video.
+    <section class="next" aria-labelledby="lunar-loop-title">
+      <div class="next-copy">
+        <p class="eyebrow">Additional playable project</p>
+        <h2 id="lunar-loop-title">Lunar Loop</h2>
+        <p>Watch the full-quality 4K60 capture of a working Godot 4 lunar automation simulation with carrier, air, and excavator drones; live conveyor and factory production; resource logistics; utilities; and player building placement.</p>
+      </div>
+      <a class="project-link" href="https://apetrillo99.github.io/Lunar-Loop-Portfolio/">Watch Lunar Loop</a>
     </section>
 
     <footer>
